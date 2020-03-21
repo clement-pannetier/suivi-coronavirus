@@ -3,9 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="api.js"></script>
+
+  <title>Suivi Coronavirus France</title>
 </head>
 <body>
-  
+  <main>
+    <h1>Suivi Coronavirus France</h1>
+    <img src="logo.png" alt="logo coronavirus">
+  </main>
+
+  <section class="confirmed">
+    <span class="number" id="confirmed__number">⌛</span>
+    <p class="info">cas confirmés</p>
+  </section>
+
+  <section class="deaths-recovered">
+    <span class="number" id="deaths__number">⌛</span>
+    <p class="info">décès recensés</p>
+
+    <span class="number" id="recovered__number">⌛</span>
+    <p class="info">personnes guéries</p>
+  </section>
+
+  <footer>
+    <p>Made by "Clément Pannetier". Powered by <a href="https://github.com/ExpDev07/coronavirus-tracker-api">ExpDev07 / coronavirus-tracker-api</a> | Last updated : <span id="last_updated"></span></p>
+  </footer>
 </body>
 </html>
