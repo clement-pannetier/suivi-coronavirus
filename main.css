@@ -8,32 +8,25 @@ body {
   text-align: center;
 }
 
-body > * {
-  flex: 1 100%;
-  height: 47vh;
-}
+body > * { flex: 1 100%; }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 70vh;
 
   color: #ffffff;
 
   background-color: #051440;
 }
 
-h1 {
-  font-size: 3em;
-}
+h1 { font-size: 3em; }
 
-img {
-  width: 250px;
-}
+img { width: 150px; }
 
 section {
-  flex: 1 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,26 +34,29 @@ section {
 }
 
 .confirmed {
+  height: 30vh;
+
   background-color: #ffffff;
 }
 
 .deaths-recovered {
+  height: 50vh;
+
   background-color: #EC1920;
 }
 
 .number {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .info {
-  font-size: 2em;
+  margin-top: 0;
+
+  font-size: 1.5em;
 }
 
 footer {
-  flex: 1 100%;
-  height: 6vh;
-
   color: #ffffff;
 
   background-color: #051440;
@@ -71,6 +67,21 @@ a {
   color: #ffffff;
 }
 
-a:hover {
-  color: #EC1920;
+a:hover { color: #EC1920; }
+
+@media all and (min-width: 576px) {
+  body > * { height: 47vh !important; }
+
+  section { flex: 1 0 0; }
+
+  img { width: 250px; }
+
+  .number { font-size: 60px; }
+
+  .info { font-size: 2em; }
+
+  footer {
+    flex: 1 100%;
+    height: 6vh !important;
+  }
 }
