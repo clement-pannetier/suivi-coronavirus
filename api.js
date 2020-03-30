@@ -13,5 +13,9 @@ const URL = "https://corona.lmao.ninja/countries/france";
 
     const recovered = data.recovered;
     document.getElementById("recovered__number").textContent = recovered;
+  
+    const date = new Date(data.updated);
+    const last_update = date.toLocaleString();
+    document.getElementById("last_update").textContent = last_update;
   }
 })();
