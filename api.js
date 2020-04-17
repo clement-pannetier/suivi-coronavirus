@@ -1,4 +1,4 @@
-const URL = "https://corona.lmao.ninja/countries/france";
+const URL = "https://corona.lmao.ninja/v2/countries/fr";
 
 (async () => {
   const response = await fetch(URL);
